@@ -12,13 +12,18 @@ This repository contains the full code, handcrafted prompts (NL-SQL pairs), and 
 
 # Key Components:
 1. Schema-Augmented Prompting: Embeds the SNOMED CT schema (description & relationship tables) into prompts to guide SQL generation.
-2. Few-Shot vs. Zero-Shot Comparison: Evaluates the impact of K=3 in-context examples per query category on executability and syntactic similarity.
-3. Handcrafted NL–SQL Dataset: 120 balanced examples across six clinically motivated categories (e.g., concept lookups, synonym
+   
+3. Few-Shot vs. Zero-Shot Comparison: Evaluates the impact of K=3 in-context examples per query category on executability and syntactic similarity.
+   
+4. Handcrafted NL–SQL (Prompts/Examples): 120 balanced examples across six clinically motivated categories (such as concept lookups, synonym
    retrieval, hierarchical relationship exploration, aggregation queries).
-5. Evaluation Framework: Includes Execution Accuracy (EA), Exact Match Accuracy (EMA), Average Sequence Match Score (ASMS), SQLGlot
+   
+5. Evaluation Framework & Metrics: Includes Execution Accuracy (EA), Exact Match Accuracy (EMA), Average Sequence Match Score (ASMS), SQLGlot
    semantic equivalence, and Datacompy-based result set comparisons.
-6. Error Analysis: Identifies key failure patterns, including directionality confusion, schema hallucination, and demonstration leakage.
-7. Reproducible Pipeline: End-to-end workflow from data preprocessing (SQLite), prompt construction, model inference, to metric computation and result
+   
+7. Error Analysis: Identifies key failure patterns, including directionality confusion, schema hallucination, and demonstration leakage.
+   
+8. Reproducible Pipeline: End-to-end workflow from data preprocessing (SQLite), prompt construction, model inference, to metric computation and result
   visualisation.
 
 
