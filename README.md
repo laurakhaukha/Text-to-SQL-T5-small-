@@ -1,7 +1,6 @@
 ## Schema-Augmented Prompt Engineering for Text-to-SQL Generation over SNOMED CT
 
-This repository contains the full code, handcrafted dataset, and evaluation pipeline from my MSc Health Data Science dissertation. The project investigates whether schema-augmented prompt engineering can improve SQL generation for SNOMED CT using the lightweight T5-small model. Below is an illustration of how the user-model (t5-small) for SNOMED-CT interaction via Text-to-SQL.
-
+This repository contains the full code, handcrafted prompts (NL-SQL pairs), and an evaluation pipeline for both few-shot & zero-shot prompting from my MSc Health Data Science dissertation. The project investigates whether schema-augmented prompt engineering (few-shot & zero-shot) can improve SQL generation from natural language (NL) questions for SNOMED CT, using the lightweight T5-small model. Below is an illustration of the user-model (t5-small) interacton for SNOMED-CT via Text-to-SQL.
 
 
 
